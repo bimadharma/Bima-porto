@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* 
+html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #16746d;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-container img {
+    
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    border: 5px solid #1fa89f;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0f5550;
+    ;
+}
+
+.nav-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.nav-icon div {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+
+/* bagian home */
+.beranda {
+    background-color: rgb(30 41 59);
+    padding: 185px 30px;
+    position: relative;
+    display: flex;
+    
+}
+
+.content {
+    font-size: 40px;
+}
+
+.name {
+    color: white;
+    padding: 20px 5px;
+}
+
+.name p {
+    padding-top: 5px;
+    opacity: 0.5;
+    font-size: x-large;
+}
+
+.social-links a i {
+    color: white;
+    padding: 10px 5px;
+    font-size: x-large;
+
+}
+
+.profile-image img {
+    position: absolute;
+    top: 55%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 5px solid #1fa89f;
+    margin-bottom: 25px;
+}
+
+
+/* bagian about */
+
+.tentang {
+    background-color: #0F172A;
+    padding: 130px 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.name-about {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: x-large
+}
+
+.desk {
+    /* background-color: aqua; */
+    text-align: justify;
+    margin: 30px 30px;
+    line-height: 1.9;
+}
+
+
+/* bagian portofolio */
+.name-porto {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: x-large
+}
+
+.card-container {
+    background-color: rgb(30 41 59);
+    padding: 130px 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.gabung-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product-name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 23rem;
+    height: 14rem;
+}
+
+.card:hover {
+
+    background-color: #0F172A;
+    animation: squish 0.5s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    filter: brightness(95%);
+
+}
+
+@keyframes squish {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1) translateY(-5px);
+    }
+}
+
+
+
+/* bagian Certificate */
+
+.card-container-sertif {
+    background-color: #0F172A;
+    padding: 90px 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gabung-card-sertif {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card-sertif img {
+    position: relative;
+    width: 23rem;
+    height: 14rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.card-sertif:hover img {
+    transform: scale(1.05);
+}
+
+
+/* bagian contact */
+section#contact-person {
+    padding: 50px 0;
+    background-color: rgb(30 41 59);
+
+}
+
+.container {
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+h3 {
+    margin-bottom: 40px;
+    color: rgb(160, 158, 158);
+
+}
+
+
+/* mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        background-color: #16746d;
+        z-index: 1;
+        position: absolute; 
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-icon.change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .nav-icon.change .bar2 {
+        opacity: 0;
+    }
+
+    .nav-icon.change .bar3 {
+        transform: rotate(48deg) translate(-7px, -7px)
+    }
+
+    .card {
+        transform: scale(0.8);
+    }
+
+    .card-sertif {
+        transform: scale(0.8);
+    }
+
+
+    .beranda {
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .profile-image img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 15rem;
+        height: 15rem;
+        right: 0;
+        position: relative; /* Mengubah posisi menjadi relatif pada tampilan mobile */
+        top: 0; /* Reset top value */
+        transform: none; /* Reset transform value */
+        order: 1;
+
+    }
+
+
+
+    .content {
+        /* margin-top: 30%; */
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        order: 2;
+
+    }
+
+    .name {
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        margin-right: 5px;
+    }
+
+}
