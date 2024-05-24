@@ -29,9 +29,9 @@ nav {
 }
 
 .nav-container img {
-    
-    width: 4rem;
-    height: 4rem;
+    margin: 5px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50px;
     border: 5px solid #1fa89f;
     position: relative;
@@ -319,7 +319,6 @@ h3 {
     .beranda {
         justify-content: center;
         align-items: center;
-        gap: 50px;
         flex-direction: column;
         display: flex;
     }
@@ -338,6 +337,11 @@ h3 {
 
     }
 
+    .desk {
+        text-align: center;
+        margin: 15px 15px;
+        line-height: 1.9;
+    }
 
 
     .content {
@@ -350,15 +354,18 @@ h3 {
     }
 
     .name {
-        margin-bottom: 20px;
+        font-size: large;
     }
-
-    .social-links {
-        margin-top: 10px;
+    .name p{
+        font-size: 20px;
+        margin: 0%;
     }
 
     .social-links a {
         margin-right: 5px;
+    }
+    .container {
+        transform: scale(0.9);
     }
 
 }
