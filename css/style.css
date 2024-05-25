@@ -270,7 +270,7 @@ h3 {
 
 
 /* mobile */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .nav-links {
         display: none;
         flex-direction: column;
