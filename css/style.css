@@ -18,7 +18,6 @@ nav {
     z-index: 1;
     width: 100%;
     background-color: #16746d;
-
 }
 
 .nav-container {
@@ -271,15 +270,26 @@ h3 {
 
 /* mobile */
 @media (max-width: 950px) {
+    .nav {
+        z-index: 5;
+        position: relative;
+    }
+
+    .nav-container {
+        
+        position:relative;
+        z-index: 5;
+    }
     .nav-links {
-        display: none;
+        
         flex-direction: column;
         width: 100%;
-        top: 100px;
+        top: -400%;
         left: 0;
         background-color: #16746d;
-        z-index: 1;
+        z-index: -1;
         position: absolute; 
+        transition: 1s cubic-bezier(0.48, 0.16, 0.53, 0.85);
     }
 
     .nav-links a {
@@ -292,6 +302,8 @@ h3 {
     }
 
     .nav-links.active {
+        left: 0;
+        top: 100%;
         display: flex;
     }
 
