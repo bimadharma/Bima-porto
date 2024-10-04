@@ -164,6 +164,12 @@ nav {
     gap: 1.5rem;
 }
 
+.gabung-card-sertif img {
+    width: 368px;
+    height: 224px;
+    /* object-fit: cover;  */
+}
+
 .product-name {
     margin-top: 1rem;
     margin-bottom: 1rem;
